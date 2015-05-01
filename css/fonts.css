@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'frontage_regular';
+    src: url('../fonts/frontage-regular-webfont.eot');
+    src: url('../fonts/frontage-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/frontage-regular-webfont.woff') format('woff'), url('../fonts/frontage-regular-webfont.ttf') format('truetype'), url('../fonts/frontage-regular-webfont.svg#frontage_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

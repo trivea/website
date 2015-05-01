@@ -1,0 +1,117 @@
+body {
+    font-family: 'frontage_regular', sans-serif;
+    color: #41343e;
+    padding-bottom: 100px;
+}
+
+nav a {
+    color: #41343e;
+    background-color: #fff;
+    cursor: pointer;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    margin: 0 !important;
+}
+
+nav a:hover,
+nav a:active,
+.active {
+    color: #fff !important;
+    background-color: #EF473A !important;
+}
+
+.serif {
+    font-family: 'Lora', serif;
+}
+
+.bg-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.btn-primary,
+.btn-primary:visited {
+    background-color: #EF473A;
+    border: none;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+    background-color: #de3629;
+}
+
+.btn-secondary {
+    background: #fff;
+    color: #EF473A;
+}
+
+.view,
+#pg-home h3,
+#pg-shoppers #shoppers-signup-btn,
+#pg-shoppers #shoppers-info,
+#pg-retailers #retailers-signup-btn,
+#pg-retailers #retailers-info {
+    display: none;
+}
+
+#pg-home {
+    color: #fff;
+    text-shadow: 2px 2px 6px #41343e;
+}
+
+#pg-home h1 {
+    font-size: 6rem;
+    margin-top: 30vh;
+}
+
+#pg-home .bg-img {
+    background-image: url(../img/bg_home.jpg);
+}
+
+#pg-product .screen-description {
+    margin-top: 30vh;
+}
+
+#pg-product .screen-img {
+    max-width: 175%;
+    margin: auto 0;
+}
+
+#pg-shoppers .bg-img {
+    background-image: url('../img/bg_shoppers.jpg');
+}
+
+#pg-shoppers #shoppers-info img,
+#pg-retailers #retailers-info img {
+    max-width: 40%;
+    margin-bottom: 2em;
+}
+
+#pg-retailers .bg-img {
+    background-image: url(../img/bg_retailers.jpg);
+}
+
+#pg-details {
+    padding-bottom: 10em;
+}
+
+#pg-details .row {
+    margin: 2em 0;
+}
+
+#pg-about {
+    margin-top: 30vh;
+}

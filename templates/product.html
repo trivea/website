@@ -1,0 +1,15 @@
+<div class="container-fluid view" id="pg-product">
+    <div class="row">
+        <div class="col-md-3 col-md-offset-2">
+            <img class="screen-img" src={{screens[index].url}}>
+        </div>
+
+        <div class="col-md-3 col-md-offset-2 screen-description">
+            <h4 class="serif">{{screens[index].description}}</h4>
+            <br>
+            <a class="btn btn-secondary btn-lg" ng-click="showPrevScreen()" ng-class="{'hidden':!hasPrevScreen()}">Back</span>
+</a>
+            <a class="btn btn-primary btn-lg" ng-click="showNextScreen()" ng-class="{'hidden':!hasNextScreen()}">Next</a>
+        </div>
+    </div>
+</div>
