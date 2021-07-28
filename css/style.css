@@ -20,7 +20,7 @@ nav a:hover,
 nav a:active,
 .active {
     color: #fff !important;
-    background-color: #EF473A !important;
+    background-color: #2ABCAE !important;
 }
 
 .serif {
@@ -44,7 +44,7 @@ nav a:active,
 
 .btn-primary,
 .btn-primary:visited {
-    background-color: #EF473A;
+    background-color: #2ABCAE;
     border: none;
 }
 
@@ -55,7 +55,7 @@ nav a:active,
 
 .btn-secondary {
     background: #fff;
-    color: #EF473A;
+    color: #2ABCAE;
 }
 
 .view,

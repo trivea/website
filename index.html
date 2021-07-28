@@ -1,44 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Clutch</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body ng-app="clutch">
-
-    <div ui-view></div>
-
-    <nav class="navbar-fixed-bottom" ng-controller="navController">
-        <ul class="nav nav-justified">
-            <li>
-                <a id="product-link" ui-sref="home" ng-class="{active: isActive('/')}">
-                    <span class="glyphicon glyphicon-home"></span>
-                </a>
-            </li>
-            <li><a id="product-link" ui-sref="product" ng-class="{active: isActive('/product')}"><b>Product</b></a>
-            </li>
-            <li><a id="shoppers-link" ui-sref="shoppers" ng-class="{active: isActive('/shoppers')}"><b>For Shoppers</b></a>
-            </li>
-            <li><a id="retailers-link" ui-sref="retailers" ng-class="{active: isActive('/retailers')}"><b>For Retailers</b></a>
-            </li>
-            <li><a id="details-link" ui-sref="details" ng-class="{active: isActive('/details')}"><b>How It Works</b></a>
-            </li>
-            <li><a id="about-link" ui-sref="about" ng-class="{active: isActive('/about')}"><b>About Us</b></a>
-            </li>
-        </ul>
-    </nav>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
-    <script src="js/angular-ui-router.min.js"></script>
-    <script src="js/jquery-1.11.2.min.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/controllers.js"></script>
-</body>
-
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Aditya Trivedi" />
+        <meta name="author" content="Aditya Trivedi" />
+        <title>Aditya Trivedi</title>
+        <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Aditya Trivedi</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="./img/profile.jpg" alt="..." /></span>
+            </a>
+            <div class="social-icons">
+                        <a class="social-icon" href="https://www.linkedin.com/in/adityahtrivedi"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/trivea"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" href="https://www.twitter.com/aditya3v"><i class="fab fa-twitter"></i></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Aditya
+                        <span class="text-primary">Trivedi</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        <a href="mailto:adityahtrivedi@gmail.com">adityahtrivedi@gmail.com</a>
+                    </div>
+                    <p class="lead mb-5"> I'm currently a 1L at New York University School of Law. I come to law school with a diverse set of professional and academic experiences. I hold an undergraduate degree in physics, with minors in engineering physics and computer science. My undergradute experience was heavily research focused, culimating in a <a href="https://dataspace.princeton.edu/handle/88435/dsp010z708z89z">thesis on quantum computing</a>. Professionally, I've worked as a data-driven consultant in the technology space and as an engineer at a startup, a large tech company, and at a non-profit. My experience in the technology industry has exposed me to the various ways that technology and the law intersect. I'm hoping to explore these connections in greater depth during my time at NYU and in my career, wherever that may take me.
+                    </p>
+                    <!--<div class="social-icons">
+                        <a class="social-icon" href="https://www.linkedin.com/in/adityahtrivedi!"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/trivea"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" href="https://www.twitter.com/a3vedi"><i class="fab fa-twitter"></i></a>
+                    </div>-->
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experience</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Marketing Science Partner, Disruptors</h3>
+                            <div class="subheading mb-3">Facebook</div>
+                            <p>At Facebook, I helped high-growth startups across diverse industries use digital advertising to grow their businesses. This included using data to influence C-level executives to pivot advertising strategy, helping marketers understand advertising metrics, and speaking at Facebook events. Additionally, I acted as an internal subject matter expert on how digital marketers needed to change their practices to adapt to an increasingly privacy-first world.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">January 2019 - July 2021</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Senior Business Consultant</h3>
+                            <div class="subheading mb-3">Applied Predictive Technologies</div>
+                            <p>At APT (a Mastercard subsidiary), I worked on client teams spanning the retail, restaurant and telecom industries. My responsibilities included maintaining and building enterprise data pipelines, conducting complex data analyses on customer and store-level data, and presenting my findings to C-suite executives. I also trained and mentored junior employes. </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">June 2017 - December 2018</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Software Engineer</h3>
+                            <div class="subheading mb-3">ThinAir Labs</div>
+                            <p>ThinAir was a software security startup. At ThinAir, I built UI and core OS features for the OSX and Windows platforms of our flagship endpoint protection product (core technologies: Objective C, C++, C#). I also improved and extended a key part of our digital asset tagging function (core technology: Java). Finally, I gave demos to prospective customers at a major industry-wide conference
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">July 2016 - March 2017</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Software Engineering Intern</h3>
+                            <div class="subheading mb-3">Facebook</div>
+                            <p>At Facebook, I was a member of the Language Technology team. I identified and developed necessary changes to the data model to develop key frontend features (core technology: GraphQL). I also built the "Never Translate"  and "Rate this Translation" features (implemented multiple versions for A/B testing) (core technologies: Objective C, Objective C++)</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">June 2015 - August 2015</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Software Engineering Intern</h3>
+                            <div class="subheading mb-3">Climate Central</div>
+                            <p>Climate Central's goal is to inform the public about issues related to energy and the environment. At Climate Central, I conceptualized, designed and developed a web application to predict zip-code specific wind energy generation (core technologies: Python/Django, PostgresSQL, Celery, HTML/CSS/JS). I also designed and created an energy map demonstrating the energy use output by various energy generation methods across the country (core technology: GIS, Python, Excel)</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">June 2014 - November 2014</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">New York University</h3>
+                            <div class="subheading mb-3">Candidate for Juris Doctor</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">September 2021 - May 2024 <i>(Expected)</i></span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Princeton University</h3>
+                            <div class="subheading mb-3">Bachelor of Arts</div>
+                            <div>Certificates in Computer Science and Engineering Physics</div>
+                            <p><i>Graduated with Honors (Cum Laude)</i></p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">September 2012 - May 2016</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+                    <div class="subheading mb-3">Programming Languages & Tools</div>
+                    <ul class="list-inline dev-icons">
+                        <li class="list-inline-item"><i class="fab fa-python"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-java"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-r-project"></i></li>
+                        <li class="list-inline-item"><i class="fas fa-database"></i></li>
+                    </ul>
+                    <div class="subheading mb-3">Digital Advertising</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Multi-touch attribution
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Media-mix modeling
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Digital Campaign Optimization
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Holdout and A/B Testing
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Interests-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Interests</h2>
+                    <p>Outside of work, I'm an avid baker. My favorite things to bake are pastries and bread. I'm currently trying to perfect a sourdough recipe</p>
+                    <p class="mb-0">Originally from the Milwaukee, WI area, I'm an avid fan of the Milwaukee Bucks and the Green Bay Packers</p>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Awards-->
+            <section class="resume-section" id="awards">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Awards & Certifications</h2>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Engineering Physics Independent Work Award <p><i>Awarded to the  Senior with the most outstanding engineering physics independent thesis</i></p>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Jeffrey O. Kephart ’80 Engineering Physics Award <p><i>Awarded to the Engineering Physics Senior with the most outstanding academic record</i></p>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Allen G Shenstone Prize in Physics <p><i>Awarded to a senior undergraduate for academic performance and promise in research</i></p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
