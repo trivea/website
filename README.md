@@ -1,1 +1,1 @@
-# trivea.github.io
+# adityatrivedi.com
